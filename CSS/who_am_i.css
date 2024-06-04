@@ -111,8 +111,7 @@
     #who-am-i > div > div {
         grid-column: 1/6;
         grid-row: 2/5;
-        padding: 0 0.5rem;
-
+        padding: 0 1rem;
     }
 
     #who-am-i > div > div > p:nth-child(1){
