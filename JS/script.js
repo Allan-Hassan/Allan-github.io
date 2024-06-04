@@ -52,6 +52,12 @@ let typed = new Typed(paragraph_to_toggle, {
 
 // P R O J E C T S
 const project_tiles = document.querySelectorAll('.project-tile');
+let threshold;
+if (window.innerWidth > 768) {
+  threshold = 0.8;
+} else {
+  threshold = 0.3;
+}
 
 const tiles_observer = new IntersectionObserver(function(entries, observer) {
   entries.forEach(entry => {
@@ -61,7 +67,8 @@ const tiles_observer = new IntersectionObserver(function(entries, observer) {
     }
   });
 }, {
-  threshold: 1
+  
+  threshold: threshold
 });
 
 project_tiles.forEach(tile => {
