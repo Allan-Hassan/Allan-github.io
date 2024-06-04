@@ -115,6 +115,7 @@ header>img:nth-child(1) {
     .down-arrow {
         height: 2.2rem;
         width: 2.2rem;
+        margin-bottom: 0.8rem;
     }
 }
 
