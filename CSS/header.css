@@ -67,8 +67,6 @@ header>img:nth-child(1) {
     color: black;
     position: relative;
     top: 40%;
-    height: 4rem;
-    width: 4rem;
     /* opacity: 1; */
     animation: bounce;
     animation-duration: 2s;
@@ -113,6 +111,11 @@ header>img:nth-child(1) {
     header>img:nth-child(1) {
         bottom: 70%;
     }
+
+    .down-arrow {
+        height: 2.2rem;
+        width: 2.2rem;
+    }
 }
 
 /*** tablet ***/
@@ -146,6 +149,11 @@ header>img:nth-child(1) {
 
     header>img:nth-child(1) {
         bottom: 65%;
+    }
+    
+    .down-arrow {
+        height: 2.7rem;
+        width: 2.7rem;
     }
 }
 
@@ -181,6 +189,11 @@ header>img:nth-child(1) {
     header>img:nth-child(1) {
         bottom: 65%;
     }
+
+    .down-arrow {
+        height: 3.3rem;
+        width: 3.3rem;
+    }
 }
 
 /*** Extra large ***/
@@ -213,6 +226,11 @@ header>img:nth-child(1) {
 
     header>img:nth-child(1) {
         bottom: 65%;
+    }
+
+    .down-arrow {
+        height: 4rem;
+        width: 4rem;
     }
 }
 
