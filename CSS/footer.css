@@ -32,9 +32,7 @@
 .contact_tiles {
     display: flex;
     justify-content: center;
-    margin: 2rem auto;
     background-color: #111;
-    padding: 1rem 2rem;
     border-radius: 0.5rem;
 }
 
@@ -42,6 +40,12 @@
     width: 2.2rem;
     height: 2.2rem;
     margin-inline: 0.5rem;
+}
+
+.contact_tiles > a:nth-child(3) > img {
+    background-color: white;
+    padding: 0 0.2rem;
+    border-radius: 0.3rem;
 }
 
 /* Mobile */
@@ -62,6 +66,11 @@
         font-size: 1.3rem;
         border-radius: 0.3rem;
     }
+
+    .contact_tiles {
+        margin: 1.3rem auto;
+        padding: 0.6rem 2rem;
+    }
 }
 
 /*** Tablet ***/
@@ -81,6 +90,11 @@
         padding: 1rem;
         font-size: 1.5rem;
         border-radius: 0.3rem;
+    }
+    
+    .contact_tiles {
+        margin: 2rem auto;
+        padding: 1rem 2rem;
     }
 }
 
@@ -109,6 +123,11 @@
         animation-delay: 0.2s;
         animation-iteration-count: forwards;
     }
+    
+    .contact_tiles {
+        margin: 2rem auto;
+        padding: 1rem 2rem;
+    }
 }
 
 /*** Extra large ***/
@@ -128,6 +147,11 @@
         padding: 1rem;
         font-size: 1.5rem;
         border-radius: 0.3rem;
+    }
+    
+    .contact_tiles {
+        margin: 2rem auto;
+        padding: 1rem 2rem;
     }
 
     .contact_tiles>a:hover {
