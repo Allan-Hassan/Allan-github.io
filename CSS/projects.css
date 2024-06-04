@@ -76,6 +76,11 @@
 
 /*** Mobile ***/
 @media (max-width: 576px) {
+    #projects {
+        display: flex;
+        flex-direction: column;
+    }
+
     #projects h1 {
         color: #000;
         font-size: 2rem;
@@ -83,16 +88,14 @@
     }
     
     .project-tile {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
+        display: flex;
+        flex-direction: column;
         width: 90%;
-        height: 80%;
+        max-height: 80%;
         margin: 0.7rem 0;
     }
     
     .project-desc{
-        grid-column: 1 / 2;
-        grid-row: 1 / 2;
         height: 100%;
         width: 100%;
         padding: 2rem;
@@ -104,8 +107,6 @@
     }
     
     .project-img {
-        grid-column: 1 / 2;
-        grid-row: 2 / 3;
         height: 100%;
         width: 100%;
         padding: 2rem;
@@ -118,6 +119,11 @@
 
 /*** Tablet ***/
 @media (min-width: 576px) and (max-width: 768px) {
+    #projects {
+        display: flex;
+        flex-direction: column;
+    }
+
     #projects h1 {
         color: #000;
         font-size: 2rem;
@@ -125,16 +131,14 @@
     }
     
     .project-tile {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
+        display: flex;
+        flex-direction: column;
         width: 90%;
         height: 80%;
         margin: 0.7rem 0;
     }
     
     .project-desc{
-        grid-column: 1 / 2;
-        grid-row: 1 / 2;
         height: 100%;
         width: 100%;
         padding: 2rem;
@@ -146,8 +150,6 @@
     }
     
     .project-img {
-        grid-column: 1 / 2;
-        grid-row: 2 / 3;
         height: 100%;
         width: 100%;
         padding: 2rem;
