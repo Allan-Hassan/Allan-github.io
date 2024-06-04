@@ -1,0 +1,154 @@
+#footer {
+    background: linear-gradient(180deg, #9a9a9a, #3e2e5c);
+    display: flex;
+    flex-direction: column;
+}
+
+#footer h1 {
+    font-size: 3rem;
+    margin: 4rem 0;
+    text-align: center;
+    background: -webkit-linear-gradient(#111, #2F0E72);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#footer p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+}
+
+#footer span {
+    border: 2px solid #2F0E72;
+    margin: 3rem auto;
+    padding: 1rem;
+    font-size: 1.5rem;
+    border-radius: 0.3rem;
+}
+
+.contact_tiles {
+    display: flex;
+    justify-content: center;
+    margin: 2rem auto;
+    background-color: #111;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+}
+
+.social-link-logo {
+    width: 2.2rem;
+    height: 2.2rem;
+    margin-inline: 0.5rem;
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+    #footer {
+        height: 70vh;
+        padding: 2rem;
+    }
+
+    #footer p {
+        font-size: 1.3rem;
+        width: 90%;
+    }
+
+    #footer span {
+        margin: 3rem auto;
+        padding: 0.7rem;
+        font-size: 1.3rem;
+        border-radius: 0.3rem;
+    }
+}
+
+/*** Tablet ***/
+@media (min-width: 576px) and (max-width: 768px) {
+    #footer {
+        height: 60vh;
+        padding: 2rem;
+    }
+
+    #footer p {
+        font-size: 1.3rem;
+        width: 90%;
+    }
+
+    #footer span {
+        margin: 3rem auto;
+        padding: 1rem;
+        font-size: 1.5rem;
+        border-radius: 0.3rem;
+    }
+}
+
+/*** Desktop ***/
+@media (min-width: 768px) and (max-width: 1199px) {
+    #footer {
+        height: 55vh;
+        padding: 2rem;
+    }
+
+    #footer p {
+        font-size: 1.5rem;
+        width: 80%;
+    }
+
+    #footer span {
+        margin: 3rem auto;
+        padding: 1rem;
+        font-size: 1.5rem;
+        border-radius: 0.3rem;
+    }
+
+    .contact_tiles>a:hover {
+        animation-name: animate_social_links;
+        animation-duration: 1s;
+        animation-delay: 0.2s;
+        animation-iteration-count: forwards;
+    }
+}
+
+/*** Extra large ***/
+@media (min-width: 1200px) {
+    #footer {
+        height: 55vh;
+        padding: 2rem;
+    }
+
+    #footer p {
+        font-size: 1.5rem;
+        width: 70%;
+    }
+
+    #footer span {
+        margin: 3rem auto;
+        padding: 1rem;
+        font-size: 1.5rem;
+        border-radius: 0.3rem;
+    }
+
+    .contact_tiles>a:hover {
+        animation-name: animate_social_links;
+        animation-duration: 1s;
+        animation-delay: 0.2s;
+        animation-iteration-count: forwards;
+    }
+
+}
+
+@keyframes animate_social_links {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}

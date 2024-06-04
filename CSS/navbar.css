@@ -1,0 +1,284 @@
+.logo,
+nav>ul>li>a {
+    transition: font-size 0.3s ease;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+@media (max-width: 576px) {
+    .logo {
+        font-size: 2rem;
+        font-weight: bold;
+        margin: 1rem;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    nav>ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        backdrop-filter: blur(10px);
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100vw;
+        z-index: 10;
+        position: fixed;
+        animation: slideOut 0.5s ease-in-out forwards;
+    }
+    nav>ul>li {
+        list-style: none;
+        margin: 1rem;
+        font-size: 1.5rem;
+        color: #000;
+    }
+    nav>ul>li>a {
+        text-decoration: none;
+        color: #000;
+    }
+
+    .hamburger, 
+    .dismiss {
+        height: 2rem;
+        width: 2rem;
+        margin: 1rem;
+    }
+
+    .hamburger:hover, 
+    .dismiss:hover{
+        cursor: pointer;
+    }
+    .navbar-nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .dismiss{
+        position: absolute;
+        top: 0.5rem;
+        right: 1rem;
+        font-size: 2rem;
+    }
+
+    .active {
+        animation: slideIn 0.5s ease-in-out forwards;
+    }
+
+    nav>ul>li>span,
+    nav>ul>li>a>span,
+    .logo>span {
+        color: #2F0E72;
+    }
+}
+
+/*** tablet ***/
+@media (min-width: 576px) and (max-width: 768px) {
+    .logo {
+        font-size: 2rem;
+        font-weight: bold;
+        margin: 1rem;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    nav>ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        backdrop-filter: blur(10px);
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100vw;
+        z-index: 10;
+        position: fixed;
+        animation: slideOut 0.5s ease-in-out forwards;
+    }
+    nav>ul>li {
+        list-style: none;
+        margin: 1rem;
+        font-size: 1.5rem;
+        color: #000;
+    }
+    nav>ul>li>a {
+        text-decoration: none;
+        color: #000;
+    }
+
+    .hamburger, 
+    .dismiss {
+        height: 2rem;
+        width: 2rem;
+        margin: 1rem;
+    }
+
+    .hamburger:hover, 
+    .dismiss:hover{
+        cursor: pointer;
+    }
+    .navbar-nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .dismiss{
+        position: absolute;
+        top: 0.5rem;
+        right: 1rem;
+        font-size: 2rem;
+    }
+
+    .active {
+        animation: slideIn 0.5s ease-in-out forwards;
+    }
+
+    nav>ul>li>span,
+    nav>ul>li>a>span,
+    .logo>span {
+        color: #2F0E72;
+    }
+}
+
+/*** Desktop ***/
+@media (min-width: 768px) and (max-width: 1199px) {
+    .logo {
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: #000000;
+        margin-inline: 1rem;
+    }
+
+    .logo:hover {
+        cursor: context-menu;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 1rem;
+    }
+
+    nav>ul {
+        display: flex;
+    }
+
+    nav>ul>li {
+        list-style: none;
+        margin-inline: 0.5rem;
+    }
+
+    nav>ul>li>a {
+        text-decoration: none;
+        color: #000000;
+        font-size: 1.1rem;
+    }
+
+    nav>ul>li {
+        transition: transform 0.2s ease-in-out;
+    }
+
+    nav>ul>li:hover {
+        transform: scale(1.15);
+        transition: transform 0.2s ease-in-out;
+    }
+
+    nav>ul>li>span,
+    nav>ul>li>a>span,
+    .logo>span {
+        color: #2F0E72;
+    }
+
+    .nav-icons {
+        visibility: hidden;
+        display: none;
+    }
+}
+
+/*** Extra large ***/
+@media (min-width: 1200px) {
+    .logo {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #000000;
+        margin-inline: 1rem;
+    }
+
+    .logo:hover {
+        cursor: context-menu;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 1rem;
+    }
+
+    nav>ul {
+        display: flex;
+    }
+
+    nav>ul>li {
+        list-style: none;
+        margin-inline: 0.5rem;
+    }
+
+    nav>ul>li>a {
+        text-decoration: none;
+        color: #000000;
+        font-size: 1.2rem;
+    }
+
+    nav>ul>li {
+        transition: transform 0.2s ease-in-out;
+    }
+
+    nav>ul>li:hover {
+        transform: scale(1.15);
+        transition: transform 0.2s ease-in-out;
+    }
+
+    nav>ul>li>span,
+    nav>ul>li>a>span,
+    .logo>span {
+        color: #2F0E72;
+    }
+
+    .nav-icons {
+        visibility: hidden;
+        display: none;
+    }
+}
+
+/* create animation for sliding the navbar  */
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+@keyframes slideOut {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}

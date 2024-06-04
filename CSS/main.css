@@ -1,0 +1,25 @@
+@import url('header.css');
+@import url('about_me.css');
+@import url('navbar.css');
+@import url('projects.css');
+@import url('skills.css');
+@import url('who_am_i.css');
+@import url('footer.css');
+@font-face {
+  font-family: 'JejuHallasan-Regular';
+  src: url('../assets/fonts/JejuHallasan-Regular.ttf');
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+  font-family: JejuHallasan-Regular, Helvetica, sans-serif;
+  margin: 0;
+}
+html{
+  font-family: JejuHallasan-Regular, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+
+.container{
+  overflow-x: hidden;
+}
+

@@ -1,0 +1,109 @@
+#about-me {
+    background: linear-gradient(180deg, #ffffff, #aaaaaa);
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+#about-me > div{
+    max-height: 50px;
+}
+
+/*** Mobile ***/
+@media (max-width: 576px) {
+    #about-me{
+        grid-template-rows: 1fr 1fr; 
+        grid-template-columns: 1fr;
+    }
+    
+    #about-me > div {
+        grid-row: 2 / 3;
+        grid-column: 1 / 2;
+        margin: 0 2rem;
+        transform: translateY(-50px);
+    }
+    #about-me > div > p{
+        text-align: center;
+        font-size: 1.4rem;
+    }
+    #about-me > img {
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+        width: 70%;
+        height: auto;
+        transform: translateY(80px);
+    }
+}
+
+/*** tablet ***/
+@media (min-width: 576px) and (max-width: 767px) {
+    #about-me{
+        grid-template-rows: 1fr 1fr; 
+        grid-template-columns: 1fr;
+    }
+    
+    #about-me > div {
+        grid-row: 2 / 3;
+        grid-column: 1 / 2;
+        margin: 0 2rem;
+        transform: translateY(-50px);
+    }
+    #about-me > div > p{
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    #about-me > img {
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+        width: 60%;
+        height: auto;
+        transform: translateY(50px);
+    }
+}
+
+/*** Desktop ***/
+@media (min-width: 768px) and (max-width: 1199px) {
+    #about-me{
+        grid-template-rows: 1fr; 
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    #about-me > div {
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+        margin: 0 2rem;
+    }
+    #about-me > div > p{
+        text-align: center;
+        font-size: 1.6rem;
+    }
+    #about-me > img {
+        grid-row: 1 / 2;
+        grid-column: 2 / 3;
+        width: 60%;
+        height: auto;
+    }
+}
+
+/*** Extra large ***/
+@media (min-width: 1200px) {
+    #about-me{
+        grid-template-rows: 1fr; 
+        grid-template-columns: 1fr 1fr;
+    }
+    #about-me > div {
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+        margin: 0 2rem;
+    }
+    #about-me > div > p{
+        text-align: center;
+        font-size: 1.7rem;
+    }
+    #about-me > img {
+        grid-row: 1 / 2;
+        grid-column: 2 / 3;
+        width: 50%;
+        max-width: 400px;
+        height: auto;
+    }
+}
