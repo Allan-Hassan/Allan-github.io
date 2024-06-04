@@ -6,6 +6,10 @@
     padding-bottom: 5rem;
 }
 
+#projects h1 {
+    text-align: center;
+}
+
 .hidden{
     opacity: 0;
 }
