@@ -52,7 +52,7 @@
 .project-desc h2 {
     color: #fff;
     font-size: 1.5rem;
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
 }
 
 .project-desc p {
@@ -262,7 +262,8 @@
     
     .project-desc{
         grid-column: 1 / 2;
-        height: 100%;
+        min-height: 100%;
+        height: auto;
         width: 100%;
         padding: 2rem;
     }
