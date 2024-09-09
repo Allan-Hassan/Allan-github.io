@@ -76,20 +76,20 @@ project_tiles.forEach(tile => {
 });
 
 // G L O W   E F F E C T
-const handle_glow_effect = (event) => {
-  const target = event.target;
+// const handle_glow_effect = (event) => {
+//   const target = event.target;
   
-  const rect = target.getBoundingClientRect(),
-        x = event.clientX - rect.left,
-        y = event.clientY - rect.top;
+//   const rect = target.getBoundingClientRect(),
+//         x = event.clientX - rect.left,
+//         y = event.clientY - rect.top;
 
-  target.style.setProperty('--x', `${ x }px`);
-  target.style.setProperty('--y', `${ y }px`);
-}
+//   target.style.setProperty('--x', `${ x }px`);
+//   target.style.setProperty('--y', `${ y }px`);
+// }
 
-project_tiles.forEach(tile => {
-  tile.addEventListener('mousemove', handle_glow_effect);
-});
+// project_tiles.forEach(tile => {
+//   tile.addEventListener('mousemove', handle_glow_effect);
+// });
 
 // S K I L L S
 document.addEventListener('scroll', () => {
