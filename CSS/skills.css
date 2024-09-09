@@ -220,6 +220,12 @@
         gap: 1rem;
     }
 
+    .desc-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
     #skills > h1{
         font-size: 2rem;
     }
@@ -272,6 +278,12 @@
 @media (min-width: 1200px) {
     #skills > div{
         gap: 1rem;
+    }
+
+    .desc-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
     #skills > h1{
