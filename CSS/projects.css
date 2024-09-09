@@ -38,10 +38,13 @@
 }
 
 .project-img {
-    display: grid;
-    place-items: center;
-    height: 100%;
-    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+    height: auto;
+    min-width: 100%;
+    width: auto;
     background-color: #555555;
     padding: 2rem;
 }
