@@ -121,6 +121,9 @@
     #who-am-i > div > div > p:nth-child(2){
         font-size: 1.4rem;
         line-height: 2rem;
+        width: 90%;
+        text-align: center;
+        margin-inline: auto;
     }
 }
 
